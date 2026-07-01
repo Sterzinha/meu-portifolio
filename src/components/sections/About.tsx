@@ -16,8 +16,8 @@ export function About() {
             <p className='text-base leading-relaxed text-gray-300 md:text-lg'>
                Sou Sterphane Roque, desenvolvedora front-end com mais de 2 anos
                de experiência em projetos freelance. Meu interesse em TI começou
-               em 2019, durante meu curso técnico em informática, onde estudei C,
-               C++, Java, PHP, SQL, HTML, CSS e JavaScript.
+               em 2019, durante meu curso técnico em informática, onde estudei
+               C, C++, Java, PHP, SQL, HTML, CSS e JavaScript.
             </p>
             <p className='mt-6 text-base leading-relaxed text-gray-300 md:text-lg'>
                Formei-me em 2021 e desenvolvi um projeto de conclusão de curso
@@ -25,10 +25,6 @@ export function About() {
                especializando no desenvolvimento mobile e web, sempre buscando
                criar soluções inovadoras e funcionais.
             </p>
-            <span className='mt-6 inline-flex items-center gap-2 text-gray-200'>
-               <span className='text-lg'>📍</span>
-               Wenceslau Braz, Paraná, Brasil
-            </span>
          </div>
 
          <div className='mt-16'>
