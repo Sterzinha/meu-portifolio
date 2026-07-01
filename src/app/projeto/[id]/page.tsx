@@ -11,6 +11,7 @@ import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
 import { useRef, useState } from 'react';
 import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import Link from 'next/link';
 
 type ProjectPageProps = {
    params: { id: string };
@@ -33,13 +34,24 @@ export default function Project({ params }: ProjectPageProps) {
    }
 
    return (
-      <div className='max-w-[800px] w-full mx-auto px-5  mt-10 pb-20'>
-         <h1 className='font-bold text-2xl mb-10'>{project.title}</h1>
+      <div className='max-w-[900px] w-full mx-auto px-5 pt-28 pb-20'>
+         <Link
+            href='/#projetos'
+            className='mb-8 inline-flex items-center gap-1 text-sm font-semibold text-primary hover:gap-2 transition-all'>
+            <IoIosArrowBack /> Voltar aos projetos
+         </Link>
+         <h1 className='text-glow font-extrabold text-4xl mb-10 text-primary-light'>
+            {project.title}
+         </h1>
 
-         <h2 className='font-bold text-xl mb-3'>Sobre o projeto</h2>
+         <h2 className='font-bold text-xl mb-3 text-primary'>
+            Sobre o projeto
+         </h2>
          <p>{project.descriptionDetails}</p>
 
-         <h2 className='font-bold text-xl mt-10 mb-5'>Telas do projeto</h2>
+         <h2 className='font-bold text-xl mt-10 mb-5 text-primary'>
+            Telas do projeto
+         </h2>
 
          <Swiper
             onSlideChange={(swiper) => onSwiperChange(swiper)}
@@ -82,10 +94,10 @@ export default function Project({ params }: ProjectPageProps) {
          </Swiper>
          <div className='flex gap-2 items-center justify-center'>
             <button
-               className={`py-2 px-4 rounded-lg ${
+               className={`py-2 px-4 rounded-lg transition-colors ${
                   isBeginning
-                     ? 'bg-purple-300 cursor-not-allowed'
-                     : 'bg-purple-400'
+                     ? 'bg-primary/30 cursor-not-allowed'
+                     : 'bg-primary hover:bg-primary-dark'
                }`}
                id='prev'
                disabled={isBeginning}>
@@ -95,8 +107,10 @@ export default function Project({ params }: ProjectPageProps) {
                />
             </button>
             <button
-               className={`py-2 px-4 rounded-lg ${
-                  isEnd ? 'bg-purple-300 cursor-not-allowed' : 'bg-purple-400'
+               className={`py-2 px-4 rounded-lg transition-colors ${
+                  isEnd
+                     ? 'bg-primary/30 cursor-not-allowed'
+                     : 'bg-primary hover:bg-primary-dark'
                }`}
                id='next'
                disabled={isEnd}>
@@ -107,7 +121,7 @@ export default function Project({ params }: ProjectPageProps) {
             </button>
          </div>
 
-         <h2 className='font-bold text-xl mt-10 mb-5'>
+         <h2 className='font-bold text-xl mt-10 mb-5 text-primary'>
             Tecnologias utilizadas
          </h2>
          <ul className='list-disc pl-5'>
@@ -118,7 +132,9 @@ export default function Project({ params }: ProjectPageProps) {
                />
             ))}
          </ul>
-         <h2 className='font-bold text-xl mt-10 mb-5'>Funcionalidades</h2>
+         <h2 className='font-bold text-xl mt-10 mb-5 text-primary'>
+            Funcionalidades
+         </h2>
          <ul className='list-disc pl-5 flex flex-col gap-3'>
             {project.features?.map((feat) => (
                <li
@@ -128,7 +144,9 @@ export default function Project({ params }: ProjectPageProps) {
             ))}
          </ul>
 
-         <h2 className='font-bold text-xl mt-10 mb-5'>Conclusão</h2>
+         <h2 className='font-bold text-xl mt-10 mb-5 text-primary'>
+            Conclusão
+         </h2>
          <p>{project.conclusion}</p>
       </div>
    );
