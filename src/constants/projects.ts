@@ -34,87 +34,72 @@ export const projects = [
 
       stacks: ['React Native', 'StyleSheet', 'TypeScript', 'Figma', 'SQLite'],
    },
+
    {
       id: '2',
-      title: 'RedePet App',
-      img: '/imgs/redepet-app.png',
-      imgScreens: [
-         '/imgs/telas-redepet-app/tela-1.png',
-         '/imgs/telas-redepet-app/tela-2.png',
-         '/imgs/telas-redepet-app/tela-3.png',
-         '/imgs/telas-redepet-app/tela-4.png',
-         '/imgs/telas-redepet-app/tela-5.png',
-         '/imgs/telas-redepet-app/tela-6.png',
-         '/imgs/telas-redepet-app/tela-7.png',
-         '/imgs/telas-redepet-app/tela-8.png',
-         '/imgs/telas-redepet-app/tela-9.png',
-         '/imgs/telas-redepet-app/tela-10.png',
-         '/imgs/telas-redepet-app/tela-11.png',
-         '/imgs/telas-redepet-app/tela-12.png',
-         '/imgs/telas-redepet-app/tela-13.png',
-         '/imgs/telas-redepet-app/tela-14.png',
-         '/imgs/telas-redepet-app/tela-15.png',
-         '/imgs/telas-redepet-app/tela-16.png',
-         '/imgs/telas-redepet-app/tela-17.png',
-      ],
+      title: 'SoftPet',
+      img: '/imgs/softpet.png',
+      imgScreens: ['/imgs/telas-softpet/tela-1.png'],
 
       description:
-         'RedePet é o aplicativo ideal para garantir a segurança dos seus pets. Com ele, você pode cadastrar seus animais e rastreá-los em tempo real usando o QR code na coleira. Sempre que o QR code for escaneado, você receberá uma notificação com a localização exata do seu pet, proporcionando tranquilidade e proteção para seu amigo de quatro patas.',
+         'O SoftPet é um sistema web para gerenciamento de pets, onde o usuário pode cadastrar, buscar, editar e remover animais de forma simples e organizada. Cada pet fica vinculado ao seu tutor e exibe informações como raça, telefone e idade, tudo em uma interface moderna e intuitiva.',
       descriptionDetails:
-         'O RedePet App é uma plataforma inovadora desenvolvida para ajudar tutores a manterem seus animais de estimação seguros. Através de um sistema de rastreamento por QR code, o aplicativo permite que qualquer pessoa que encontre um pet perdido possa escanear o código e entrar em contato com o dono, garantindo uma localização rápida e eficiente.',
-      urlSite:
-         'https://play.google.com/store/apps/details?id=app.redepet.localiza',
-      urlGithub: '',
+         'O SoftPet é uma aplicação web desenvolvida para facilitar o gerenciamento de pets e seus tutores. Com uma interface moderna de tema escuro e detalhes em azul, o sistema oferece um CRUD completo, autenticação de usuário e uma listagem paginada com cards expansíveis que revelam os detalhes de cada animal. O objetivo é proporcionar uma experiência fluida e eficiente para o controle de cadastros.',
+
+      urlSite: 'https://softpet.netlify.app/',
+      urlGithub: 'https://github.com/SterRoque/softpet-frontend',
+
       technologies: [
-         '<strong>Front-end:</strong> React Native, Styled Components, TypeScript',
-         '<strong>Back-end:</strong> NodeJS, NestJS, Golang, Firebase',
+         '<strong>Front-end:</strong> React, TypeScript, Tailwind',
+         '<strong>Back-end:</strong> Node.js',
          '<strong>Banco de Dados:</strong> PostgreSQL',
       ],
+
       features: [
-         '<strong>Cadastro de Pets:</strong> Usuários podem registrar seus animais com informações como nome, idade, raça e fotos.',
-         '<strong>Geração e Cadastro de QR Code: </strong> Cada pet recebe um QR code exclusivo para ser anexado à coleira, permitindo fácil identificação e recuperação em caso de perda.',
-         '<strong>Rastreamento do pet:</strong> Quando um pet perdido é encontrado, o QR code pode ser escaneado e o dono recebe uma notificação com a localização exata.',
+         '<strong>Cadastro de Pets:</strong> Registro de animais com nome, tutor, raça, telefone e idade.',
+         '<strong>Busca:</strong> Pesquisa rápida para localizar pets já cadastrados.',
+         '<strong>Cards Expansíveis:</strong> Cada card pode ser expandido para exibir os detalhes completos do pet.',
+         '<strong>Edição e Remoção:</strong> Atualização e exclusão dos cadastros de forma prática.',
+         '<strong>Autenticação:</strong> Acesso ao sistema por meio de login de usuário.',
+         '<strong>Paginação:</strong> Navegação organizada entre as páginas de pets cadastrados.',
       ],
 
       conclusion:
-         'O RedePet App é uma solução inovadora que une tecnologia e amor pelos animais, proporcionando mais segurança e tranquilidade para tutores. Com funcionalidades avançadas e uma interface intuitiva, ele se destaca como uma ferramenta essencial para qualquer dono de pet que deseja garantir o bem-estar do seu animal.',
-      stacks: [
-         'React Native',
-         'Styled Components',
-         'TypeScript',
-         'Figma',
-         'NodeJS',
-         'NestJS',
-         'SQL',
-         'Golang',
-         'Docker',
-      ],
+         'O SoftPet demonstra a construção de uma aplicação web completa, unindo um front-end moderno e responsivo a um back-end com autenticação e operações de CRUD. O projeto reforça boas práticas de organização de código e usabilidade, entregando uma ferramenta eficiente para o gerenciamento de pets e seus tutores.',
+      stacks: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'PostgreSQL', 'Nest.js', 'Prisma'],
    },
+
    {
       id: '3',
-      title: 'RedePet Web',
-      img: '/imgs/redepet-web.png',
-      imgScreens: ['/imgs/telas-redepet-web/tela-desktop.png'],
-      description: 'Essa é a uma página de download do aplicativo RedePet.',
-      descriptionDetails:
-         'Essa é uma página de download do aplicativo RedePet que foi desenvolvida para oferecer aos usuários uma experiência intuitiva e eficiente para baixar o aplicativo.',
+      title: 'Sistema de Garagem - FiveM',
+      img: '/imgs/garagem-metropole.png',
+      imgScreens: ['/imgs/telas-garagem-metropole/tela-1.png'],
 
-      urlSite: 'https://redepet.app/',
-      urlGithub: '',
+      description:
+         'Sistema de garagem para servidor FiveM desenvolvido como teste técnico para ingressar na Metrópole GG. Exibe os veículos do jogador em uma interface interativa, com placa, nome, categoria e cores personalizadas, permitindo retirar (spawnar) o veículo escolhido diretamente pelo painel.',
+      descriptionDetails:
+         'O Sistema de Garagem é um script para servidor de roleplay FiveM criado como teste técnico de admissão na Metrópole GG. A interface (NUI) lista todos os veículos pertencentes ao jogador, exibindo informações como placa, nome, categoria (esportivo, musculoso, moto, van, entre outras) e as cores primária e secundária de cada veículo. Ao clicar em "Retirar", o veículo é spawnado no mundo do jogo, com a comunicação entre a interface web e o jogo feita via eventos entre o cliente Lua e o NUI em React.',
+
+      urlSite: 'https://www.youtube.com/watch?v=naJpaaTQmvk',
+      urlGithub: 'https://github.com/SterRoque/metropole-garage',
 
       technologies: [
-         '<strong>Front-end:</strong> AstroJS, Tailwind, TypeScript',
+         '<strong>Interface (NUI):</strong> React, TypeScript, Tailwind',
+         '<strong>Script / Jogo:</strong> TypeScript',
       ],
+
       features: [
-         'Exibição clara das opções de download para Android e iOS (atualmento somente Android)',
-         'Botão de redirecionamento direto para as lojas de aplicativos',
-         'Informativo sobre os principais recursos do aplicativo',
+         '<strong>Listagem de Veículos:</strong> Exibe todos os veículos do jogador em cards organizados.',
+         '<strong>Informações Detalhadas:</strong> Mostra placa, nome, categoria e as cores primária e secundária de cada veículo.',
+         '<strong>Retirada de Veículo:</strong> Botão "Retirar" que spawna o veículo selecionado no mundo do jogo.',
+         '<strong>Integração Jogo ↔ Interface:</strong> Comunicação entre o cliente Lua e a interface React via eventos NUI.',
       ],
 
       conclusion:
-         'A página de download do RedePet é um ponto fundamental na jornada do usuário, garantindo que ele encontre rapidamente onde baixar o aplicativo e compreenda seus benefícios. Com uma interface moderna, responsiva e objetiva, a página facilita o acesso ao app e contribui para a segurança dos pets. O RedePet continua evoluindo para oferecer cada vez mais funcionalidades e melhorar a experiência de seus usuários.',
-      stacks: ['AstroJS', 'Tailwind', 'TypeScript', 'Figma'],
+         'O Sistema de Garagem foi desenvolvido como teste técnico para a Metrópole GG, demonstrando a integração entre uma interface moderna em React e a lógica de um servidor FiveM em Lua. O projeto resultou na minha aprovação e ingresso na empresa, evidenciando domínio tanto do front-end quanto da integração com o jogo.',
+      stacks: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'FiveM'],
    },
+
    {
       id: '4',
       title: 'Amigo Peludo',
@@ -177,4 +162,5 @@ export const projects = [
          'O Síntese Proteica oferece uma maneira inovadora de aprender sobre os processos biológicos fundamentais, utilizando simulações interativas para uma compreensão mais clara e dinâmica. A ferramenta visa enriquecer a educação em biologia, tornando o aprendizado mais acessível e estimulante, com planos de expansão para novos recursos e funcionalidades.',
       stacks: ['React Native', 'NativeWind'],
    },
+
 ];
