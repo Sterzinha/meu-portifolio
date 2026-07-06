@@ -1,6 +1,67 @@
 export const projects = [
    {
       id: '1',
+      title: 'Sistema de Garagem - FiveM',
+      img: '/imgs/garagem-metropole.png',
+      imgScreens: ['/imgs/telas-garagem-metropole/tela-1.png'],
+
+      description:
+         'Sistema de garagem para servidor FiveM desenvolvido como teste técnico para ingressar na Metrópole GG. Exibe os veículos do jogador em uma interface interativa, com placa, nome, categoria e cores personalizadas, permitindo retirar (spawnar) o veículo escolhido diretamente pelo painel.',
+      descriptionDetails:
+         'O Sistema de Garagem é um script para servidor de roleplay FiveM criado como teste técnico de admissão na Metrópole GG. A interface (NUI) lista todos os veículos pertencentes ao jogador, exibindo informações como placa, nome, categoria (esportivo, musculoso, moto, van, entre outras) e as cores primária e secundária de cada veículo. Ao clicar em "Retirar", o veículo é spawnado no mundo do jogo, com a comunicação entre a interface web e o jogo feita via eventos entre o cliente Lua e o NUI em React.',
+
+      urlSite: 'https://www.youtube.com/watch?v=naJpaaTQmvk',
+      urlGithub: 'https://github.com/SterRoque/metropole-garage',
+
+      technologies: [
+         '<strong>Interface (NUI):</strong> React, TypeScript, Tailwind',
+         '<strong>Script / Jogo:</strong> TypeScript',
+      ],
+
+      features: [
+         '<strong>Listagem de Veículos:</strong> Exibe todos os veículos do jogador em cards organizados.',
+         '<strong>Informações Detalhadas:</strong> Mostra placa, nome, categoria e as cores primária e secundária de cada veículo.',
+         '<strong>Retirada de Veículo:</strong> Botão "Retirar" que spawna o veículo selecionado no mundo do jogo.',
+         '<strong>Integração Jogo ↔ Interface:</strong> Comunicação entre o cliente Lua e a interface React via eventos NUI.',
+      ],
+
+      conclusion:
+         'O Sistema de Garagem foi desenvolvido como teste técnico para a Metrópole GG, demonstrando a integração entre uma interface moderna em React e a lógica de um servidor FiveM em Lua. O projeto resultou na minha aprovação e ingresso na empresa, evidenciando domínio tanto do front-end quanto da integração com o jogo.',
+      stacks: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'FiveM'],
+   },
+   {
+      id: '2',
+      title: 'Roubo a ATM - FiveM',
+      img: '/imgs/atm-robbery.png',
+      imgScreens: ['/imgs/telas-atm-robbery/tela-1.png'],
+
+      description:
+         'Sistema de roubo a caixas eletrônicos (ATM) para servidores FiveM QBCore. O jogador usa um C4 para arrombar o ATM, completa um minigame, explode o caixa e coleta o dinheiro em notas marcadas, com todo o fluxo validado no servidor.',
+      descriptionDetails:
+         'O Roubo a ATM é um recurso para servidores de roleplay FiveM baseados no framework QBCore que implementa um assalto completo a caixas eletrônicos. O projeto é organizado em três camadas principais — server, client e ui — cada uma responsável por uma parte da aplicação. O jogador se aproxima de um ATM, planta um C4 (item validado no servidor), completa um minigame de sequência de teclas e, após a explosão, retorna ao caixa para coletar o dinheiro em notas marcadas. Ao final, o ATM entra em cooldown, evitando roubos consecutivos no mesmo caixa.',
+
+      urlSite: 'https://medal.tv/pt/games/gta-v/clips/n3xLC3SsadjLxwnER?invite=cr-MSx6WHIsNTMxMzE3MzA5&v=95',
+      urlGithub: 'https://github.com/SterRoque/minigame-atm-robbery',
+
+      technologies: [
+         '<strong>Interface (UI):</strong> React, TypeScript, Tailwind',
+         '<strong>Client / Server:</strong> Lua (QBCore)',
+      ],
+
+      features: [
+         '<strong>Uso de C4:</strong> Necessário ter o item C4, validado no servidor, para iniciar o roubo ao apertar G próximo de um ATM.',
+         '<strong>Minigame de Teclas:</strong> Sequência de teclas que precisa ser completada para plantar a C4 no caixa.',
+         '<strong>Explosão com Delay:</strong> Animação de plantar a C4, contagem de 15 segundos e explosão do caixa eletrônico.',
+         '<strong>Coleta com Progressbar:</strong> Ao apertar E no ATM explodido, uma progressbar de 20 segundos libera as notas marcadas.',
+         '<strong>Sistema de Cooldown:</strong> Após o roubo, o ATM fica em cooldown, impedindo assaltos consecutivos.',
+      ],
+
+      conclusion:
+         'O Roubo a ATM demonstra a construção de um recurso completo para FiveM com arquitetura em três camadas (server, client e ui), unindo validação de itens no servidor, minigames, animações, explosões e recompensas em notas marcadas. O projeto evidencia domínio do framework QBCore e da integração entre a lógica do jogo em Lua e a interface em React.',
+      stacks: ['React', 'TypeScript', 'Tailwind', 'Lua', 'QBCore', 'FiveM'],
+   },
+   {
+      id: '3',
       title: 'Lista Fácil',
       img: '/imgs/lista-facil.png',
       imgScreens: [
@@ -36,7 +97,7 @@ export const projects = [
    },
 
    {
-      id: '2',
+      id: '4',
       title: 'SoftPet',
       img: '/imgs/softpet.png',
       imgScreens: ['/imgs/telas-softpet/tela-1.png'],
@@ -70,38 +131,7 @@ export const projects = [
    },
 
    {
-      id: '3',
-      title: 'Sistema de Garagem - FiveM',
-      img: '/imgs/garagem-metropole.png',
-      imgScreens: ['/imgs/telas-garagem-metropole/tela-1.png'],
-
-      description:
-         'Sistema de garagem para servidor FiveM desenvolvido como teste técnico para ingressar na Metrópole GG. Exibe os veículos do jogador em uma interface interativa, com placa, nome, categoria e cores personalizadas, permitindo retirar (spawnar) o veículo escolhido diretamente pelo painel.',
-      descriptionDetails:
-         'O Sistema de Garagem é um script para servidor de roleplay FiveM criado como teste técnico de admissão na Metrópole GG. A interface (NUI) lista todos os veículos pertencentes ao jogador, exibindo informações como placa, nome, categoria (esportivo, musculoso, moto, van, entre outras) e as cores primária e secundária de cada veículo. Ao clicar em "Retirar", o veículo é spawnado no mundo do jogo, com a comunicação entre a interface web e o jogo feita via eventos entre o cliente Lua e o NUI em React.',
-
-      urlSite: 'https://www.youtube.com/watch?v=naJpaaTQmvk',
-      urlGithub: 'https://github.com/SterRoque/metropole-garage',
-
-      technologies: [
-         '<strong>Interface (NUI):</strong> React, TypeScript, Tailwind',
-         '<strong>Script / Jogo:</strong> TypeScript',
-      ],
-
-      features: [
-         '<strong>Listagem de Veículos:</strong> Exibe todos os veículos do jogador em cards organizados.',
-         '<strong>Informações Detalhadas:</strong> Mostra placa, nome, categoria e as cores primária e secundária de cada veículo.',
-         '<strong>Retirada de Veículo:</strong> Botão "Retirar" que spawna o veículo selecionado no mundo do jogo.',
-         '<strong>Integração Jogo ↔ Interface:</strong> Comunicação entre o cliente Lua e a interface React via eventos NUI.',
-      ],
-
-      conclusion:
-         'O Sistema de Garagem foi desenvolvido como teste técnico para a Metrópole GG, demonstrando a integração entre uma interface moderna em React e a lógica de um servidor FiveM em Lua. O projeto resultou na minha aprovação e ingresso na empresa, evidenciando domínio tanto do front-end quanto da integração com o jogo.',
-      stacks: ['React', 'TypeScript', 'Tailwind', 'Node.js', 'FiveM'],
-   },
-
-   {
-      id: '4',
+      id: '5',
       title: 'Amigo Peludo',
       img: '/imgs/amigo-peludo.png',
       imgScreens: ['/imgs/telas-amigo-peludo/tela-desktop.png'],
@@ -127,7 +157,7 @@ export const projects = [
       stacks: ['Angular', 'TypeScript', 'Tailwind'],
    },
    {
-      id: '5',
+      id: '6',
       title: 'Sintese Proteica App',
       img: '/imgs/sintese.jpeg',
       imgScreens: [
