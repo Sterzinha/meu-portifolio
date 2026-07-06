@@ -62,6 +62,38 @@ export const projects = [
    },
    {
       id: '3',
+      title: 'Lavagem de Dinheiro - FiveM',
+      img: '/imgs/lavagem-dinheiro.png',
+      imgScreens: ['/imgs/telas-lavagem-dinheiro/tela-1.png'],
+
+      description:
+         'Sistema de lavagem de dinheiro para servidores FiveM QBCore. O jogador vai até um local, informa quanto quer lavar das suas notas marcadas, aguarda o tempo de processamento e recebe o valor em dinheiro limpo, descontada a taxa de serviço, com todo o fluxo validado no servidor.',
+      descriptionDetails:
+         'A Lavagem de Dinheiro é um recurso para servidores de roleplay FiveM baseados no framework QBCore que permite converter notas marcadas em dinheiro limpo. O projeto é organizado em três camadas principais — server, client e ui — cada uma responsável por uma parte da aplicação. O jogador se aproxima de um local de lavagem e aperta E, a interface abre exibindo quanto de dinheiro sujo ele possui (validado no servidor), digita o valor que deseja lavar (ou usa o botão MAX), aguarda o timer de processamento e recebe o valor limpo, com o servidor removendo as notas marcadas e descontando a taxa de serviço.',
+
+      urlSite: 'https://medal.tv/pt/games/gta-v/clips/n3UvohnyaFeCRWLIj?invite=cr-MSxpSVosNTMxMzE3MzA5&v=98',
+      urlGithub: 'https://github.com/SterRoque/lavagem-dinheiro-fivem',
+
+      technologies: [
+         '<strong>Interface (UI):</strong> React, TypeScript, Tailwind',
+         '<strong>Client / Server:</strong> Lua (QBCore)',
+      ],
+
+      features: [
+         '<strong>Interação por Tecla:</strong> Ao chegar perto de um local de lavagem e apertar E, a interface abre com as informações do jogador.',
+         '<strong>Validação no Servidor:</strong> A quantidade de dinheiro sujo (notas marcadas) é lida e validada diretamente no servidor.',
+         '<strong>Valor Personalizado:</strong> O jogador digita quanto deseja lavar ou usa o botão MAX para lavar tudo de uma vez.',
+         '<strong>Processamento com Timer:</strong> Ao apertar Lavar Dinheiro, um tempo de processamento é aguardado antes de liberar o valor.',
+         '<strong>Pagamento com Taxa:</strong> Após apertar Receber Dinheiro, o servidor remove as notas marcadas e paga o valor limpo, descontada a taxa de serviço.',
+         '<strong>Configuração Flexível:</strong> Taxa de serviço e locais de lavagem definidos em shared/config.lua.',
+      ],
+
+      conclusion:
+         'A Lavagem de Dinheiro demonstra a construção de um recurso completo para FiveM com arquitetura em três camadas (server, client e ui), unindo validação de itens no servidor, interface interativa em React e configuração flexível de taxas e locais. O projeto evidencia domínio do framework QBCore e da integração entre a lógica do jogo em Lua e a interface web.',
+      stacks: ['React', 'TypeScript', 'Tailwind', 'Lua', 'QBCore', 'FiveM'],
+   },
+   {
+      id: '4',
       title: 'Lista Fácil',
       img: '/imgs/lista-facil.png',
       imgScreens: [
@@ -97,7 +129,7 @@ export const projects = [
    },
 
    {
-      id: '4',
+      id: '5',
       title: 'SoftPet',
       img: '/imgs/softpet.png',
       imgScreens: ['/imgs/telas-softpet/tela-1.png'],
@@ -131,7 +163,7 @@ export const projects = [
    },
 
    {
-      id: '5',
+      id: '6',
       title: 'Amigo Peludo',
       img: '/imgs/amigo-peludo.png',
       imgScreens: ['/imgs/telas-amigo-peludo/tela-desktop.png'],
@@ -157,7 +189,7 @@ export const projects = [
       stacks: ['Angular', 'TypeScript', 'Tailwind'],
    },
    {
-      id: '6',
+      id: '7',
       title: 'Sintese Proteica App',
       img: '/imgs/sintese.jpeg',
       imgScreens: [
