@@ -11,7 +11,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
    title: 'Ster Roque | Desenvolvedora Fullstack',
    description:
-      'Portfólio de Sterphane Roque, desenvolvedora fullstack especializada em React, React Native e TypeScript.',
+      'Portfólio de Ster Roque, desenvolvedora fullstack especializada em React,TypeScript, FiveM e outras stacks.',
 };
 
 export default function RootLayout({
